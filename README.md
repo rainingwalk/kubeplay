@@ -81,7 +81,7 @@ $ cp config-sample.yaml config.yaml
 $ vi config.yaml
 ```
 
-The `config.yaml` configuration file is divided into the following sections：
+The `config.yaml` configuration file is divided into the following sections： 
 
 - compose：config for nginx and registry on current deploy node
 - kubespray：kubespray deployment config
