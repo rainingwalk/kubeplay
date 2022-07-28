@@ -5,7 +5,16 @@ on:
   push:
     tag:
       - 'v*'
-
+  # 手动触发事件
+  workflow_dispatch:
+    inputs:
+      logLevel:
+        description: 'Log level'
+        required: true
+        default: 'warning'
+      tags:
+        description: 'Test scenario tags'
+        
 env:
   IMAGE_REGISTRY: "ghcr.io"
   REGISTRY_USER: "${{ github.repository_owner }}"
